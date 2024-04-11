@@ -10,9 +10,6 @@ services:
     networks: 
       - Web_network
 
-    ports:
-      - "9000:9000"
-
 
   web:
     build: ./web
@@ -38,8 +35,6 @@ services:
     - ./db/sql:/docker-entrypoint-initdb.d
     networks: 
       - Web_network
-    ports: 
-      - "3306:3306"
     environment:
      MYSQL_ROOT_PASSWORD: mypass
     
