@@ -1,3 +1,0 @@
-FROM php:8.3-fpm 
-RUN apt
-RUN docker-php-ext-install mysqli

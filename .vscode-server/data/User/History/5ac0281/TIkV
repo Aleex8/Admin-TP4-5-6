@@ -1,2 +1,0 @@
-mysql -h <IP du container mariaDB> -u root -p
-mysql -h <IP du container MariaDB> -u root -pmypass < woodytoys.sql
