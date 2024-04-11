@@ -1,0 +1,10 @@
+.docker
+.ssh
+.vscode-server
+.bash_history
+.bash_logout
+.bashrc
+.cloud-locale-test.skip
+.mysql_history
+.profile
+.wget-hsts
