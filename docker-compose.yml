@@ -35,8 +35,9 @@ services:
     - ./db/sql:/docker-entrypoint-initdb.d
     networks: 
       - Web_network
-    environment:
-     MYSQL_ROOT_PASSWORD: mypass
+    env_file:
+      - /home/tpuser/db/sql/root.env
+      - /home/tpuser/db.env
     
 
 networks:
