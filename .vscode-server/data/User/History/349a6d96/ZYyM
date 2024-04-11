@@ -1,0 +1,8 @@
+
+FROM mariadb:latest
+
+# Variables d'environnement 
+ENV MYSQL_ROOT_PASSWORD=mypasswordroot
+
+# Port
+EXPOSE 3306

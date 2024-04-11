@@ -1,0 +1,22 @@
+
+version: '3'
+
+services:
+  php:
+    image:
+    volumes:
+    networks:
+    command:
+  web:
+    image:
+    volumes:
+    networks:
+    command:
+  
+  dns:
+    image:
+    volumes:
+    networks:
+    command:
+
+networks:

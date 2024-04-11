@@ -1,0 +1,32 @@
+
+version: '3'
+
+services:
+  php:
+    image:
+    volumes:
+    networks:
+    command:
+    port:
+  web:
+    image: web_img
+    volumes:
+    networks:
+    command:
+    port: 80:80
+  
+  dns:
+    image:
+    volumes:
+    networks:
+    command:
+    port:
+  
+  mariadb:
+    image:
+    volumes:
+    networks:
+    command:
+    port:
+
+networks:

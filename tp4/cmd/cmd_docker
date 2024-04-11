@@ -1,0 +1,4 @@
+#!/bin/bash
+# docker run  -d --name=dns -p 53:53/udp -p 53:53/tcp --mount type=bind,source=/home/tpuser/tp4/config/named.conf,target=/etc/bind/named.conf --mount type=bind,source=/home/tpuser/tp4/config/l1-9.zone,target=/etc/bind/l1-9.zone isc/bind
+# docker exec -it dns /bin/bash
+docker start dns

@@ -1,0 +1,11 @@
+FROM mariadb:latest
+
+RUN apt update
+# Variables d'environnement 
+ENV MYSQL_ROOT_PASSWORD=mypasswordroot
+
+# Port
+EXPOSE 3306
+
+# Commande pour lancer MariaDB
+CMD ["mysqld"]

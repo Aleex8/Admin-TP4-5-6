@@ -1,0 +1,16 @@
+# Utilisez l'image officielle de MariaDB à partir du Docker Hub
+FROM mariadb:latest
+
+# Variables d'environnement pour configurer MariaDB
+ENV MYSQL_ROOT_PASSWORD=mypasswordroot
+ENV MYSQL_DATABASE=mydatabase
+ENV MYSQL_USER=myuser
+ENV MYSQL_PASSWORD=mypassword
+
+# Exposez le port MySQL
+EXPOSE 3306
+
+RUN 
+
+# Commande pour lancer MariaDB
+CMD ["mysqld"]

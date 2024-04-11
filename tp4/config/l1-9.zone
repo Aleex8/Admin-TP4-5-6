@@ -1,0 +1,19 @@
+$ORIGIN l1-9.ephec-ti.be. 
+$TTL 3600
+@	IN	SOA    ns.l1-9.ephec-ti.be. admin.l1-9.ephec-ti.be. (
+	   202404071 ; Serial
+	   14400      ; Refresh
+	   3600       ; Retry
+           604800     ; Expire
+           3600      ; Minimum TTL
+	    )
+; Serveur de nom (NS records)
+@	IN	NS	ns.l1-9.ephec-ti.be.
+
+; Enregistrements d'hôtes (A records)
+
+ns      IN      A       54.37.12.15
+www     IN      A       54.37.12.15
+
+; Configuration du sous domaine home.l1-9.ephec-ti.be
+home    IN      A	54.37.12.15

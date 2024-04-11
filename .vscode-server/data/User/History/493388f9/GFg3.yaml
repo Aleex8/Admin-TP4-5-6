@@ -1,0 +1,35 @@
+
+version: '3'
+
+services:
+  php:
+    image: php
+    volumes:
+    networks: Web_network
+    command:
+    port: 9000:9000
+  web:
+    image: ./web
+    volumes: /home/tpuser/web/config/nginx.conf:/etc/nginx/nginx.conf
+    networks: Web_network
+    command:
+    port: 80:80
+  
+  dns:
+    image:
+    volumes:
+    networks: Web_network
+    command:
+    port:
+  
+  mariadb:
+    image: ./database
+    volumes:
+    networks: Web_network
+    command: bash
+    port: 3306:3306
+
+networks:
+  Web_network:
+
+volumes:

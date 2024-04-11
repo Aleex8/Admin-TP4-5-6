@@ -1,0 +1,6 @@
+FROM mariadb:latest
+
+
+RUN apt update 
+RUN apt install mariadb-client
+COPY woodytoys.sql /var/

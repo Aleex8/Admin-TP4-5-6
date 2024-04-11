@@ -1,0 +1,8 @@
+FROM mariadb:latest
+
+RUN apt update
+# Variables d'environnement 
+ENV MYSQL_ROOT_PASSWORD=mypasswordroot
+
+# Commande pour lancer MariaDB
+RUN mysqld

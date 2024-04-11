@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Abyss",
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "afterDelay",
+    "notebook.output.textLineLimit": 50,
+    "notebook.output.scrolling": true,
+    "remote.SSH.remotePlatform": {
+        "VPS": "linux",
+        "louisVPS": "linux",
+        "TPUSER": "linux"
+    }
+}

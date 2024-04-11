@@ -1,0 +1,12 @@
+FROM mariadb:latest
+
+COPY woodytoys.sql /docker-entrypoint-initdb.d/
+
+# Définir le répertoire de travail
+WORKDIR /docker-entrypoint-initdb.d/
+
+# Exécuter le script SQL lors du démarrage du conteneur
+CMD ["docker-entrypoint.sh", "mysqld"]
+
+
+

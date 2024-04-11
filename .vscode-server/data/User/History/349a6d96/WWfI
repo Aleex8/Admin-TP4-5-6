@@ -1,0 +1,14 @@
+FROM mariadb:latest
+RUN apt update 
+RUN apt install -y mariadb-client 
+RUN mkdir -p /var/sql
+COPY woodytoys.sql /var/sql
+
+COPY sqlcmd.sh /usr/local/bin/
+
+RUN chmod +x /usr/local/bin/setup.sh
+
+CMD ["setup.sh"]
+
+
+

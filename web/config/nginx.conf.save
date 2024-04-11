@@ -1,0 +1,21 @@
+events {
+}
+http {
+        server {
+            listen          80;
+            server_name     l1-9.ephec-ti.be www.l1-9.ephec-ti.be;
+            index           index.html;
+            root            /var/www/html/www/;
+            error_log       /var/log/nginx/error.log;
+            access_log      /dev/stdout log_per_virtualhost;
+        }
+}events {
+}
+http {
+	server {
+	    listen          80;
+	    server_name     www.l1-9.ephec-ti.be;
+	    index           index.html;
+	    root            /var/www/html/www/;
+	}
+}
