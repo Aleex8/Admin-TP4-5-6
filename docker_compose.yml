@@ -9,7 +9,8 @@ services:
 
     networks: 
       - Web_network
-
+    env_file:
+     - /home/tpuser/db.env
 
   web:
     build: ./web
@@ -30,7 +31,7 @@ services:
       - "53:53/udp"
 
   mariadb:
-    image: mariadb
+    build: ./db
     volumes:
     - ./db/sql:/docker-entrypoint-initdb.d
     networks: 
@@ -42,5 +43,3 @@ services:
 
 networks:
   Web_network:
-
-
