@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# La commande grep -v '^#' .env filtre les lignes commentées (commençant par #) du fichier .env. même si ici nous n'en avons pas
+# La commande xargs convertit chaque ligne filtrée en une série d'arguments.
+# La commande export rend les variables d'environnement disponibles pour le script.
+
+export $(grep -v '^#' /home/tpuser/db/sql/root.env | xargs)
+
 # Répertoire de sauvegarde
 backup_dir="/home/tpuser/database_backup"
 backup_dir_new="$backup_dir/backup_dir"
@@ -12,9 +18,9 @@ backup_file_new="all-databases-$(date +'%Y-%m-%d_%H-%M-%S').sql"
 backup_path_new="$backup_dir_new/$backup_file_new"
 
 # Mot de passe de l'utilisateur root de MariaDB
-mariadb_root_password="rootPSWDa@"
+mariadb_root_password="$MYSQL_ROOT_PASSWORD"
 
-# Exécute mysqldump pour sauvegarder toutes les bases de données
+# Exécute mariadb-dump pour sauvegarder toutes les bases de données
 # Utilisez les options -uroot -p pour spécifier l'utilisateur et le mot de passe
 docker exec tpuser-mariadb-1 mariadb-dump --all-databases -uroot -p"$mariadb_root_password"  > "$backup_path_new"
 
