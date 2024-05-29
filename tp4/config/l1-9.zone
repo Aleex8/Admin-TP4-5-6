@@ -1,19 +1,40 @@
 $ORIGIN l1-9.ephec-ti.be. 
 $TTL 3600
-@	IN	SOA    ns.l1-9.ephec-ti.be. admin.l1-9.ephec-ti.be. (
-	   202404071 ; Serial
-	   14400      ; Refresh
-	   3600       ; Retry
+@       IN      SOA    ns.l1-9.ephec-ti.be. admin.l1-9.ephec-ti.be. (
+           202404074 ; Serial
+           14400      ; Refresh
+           3600       ; Retry
            604800     ; Expire
            3600      ; Minimum TTL
-	    )
+            )
 ; Serveur de nom (NS records)
-@	IN	NS	ns.l1-9.ephec-ti.be.
+@       IN      NS      ns.l1-9.ephec-ti.be.
 
 ; Enregistrements d'hôtes (A records)
-
 ns      IN      A       54.37.12.15
 www     IN      A       54.37.12.15
 
 ; Configuration du sous domaine home.l1-9.ephec-ti.be
-home    IN      A	54.37.12.15
+home    IN      A       54.37.12.15
+
+
+; Configuration round-robin avec les autres vps 
+
+www	IN	A	54.37.11.13
+www	IN	A	54.37.13.246
+
+home	IN	A	54.37.11.13
+home	IN	A	54.37.13.246
+
+l1-9.ephec-ti.be.   IN    MX    10      mail.l1-9.ephec-ti.be.
+mail  IN      A       54.37.12.15
+
+l1-9.ephec-ti.be.   IN    TXT   "v=spf1 mx -all"
+
+mail._domainkey IN      TXT     ( "v=DKIM1; h=sha256; k=rsa; "
+          "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtTjYo88gxGSpqvHBe6QyD0WqosriGtfRV857AaJbddWOESiw+2IK0/ixF7r8cx+um4D0jTPGiolWaVo9CGEqj9A+RoymFyb9NXUOMPpfeUxFkiiM+J8M3wd12V5/zL8GAYUlkfUJIfo1IpsVmjnO5Ewh6DSyMi4qH45PlDdaIJR71cNHq9xFm1DTLK+mi9AiNhcFgQj8d0wD8V"
+          "gp1eRaWZQAql6mtmZ6Y1JzOrFMXT90uzEFTHyslMwb0XRxkbjrOAWgxwIUb6qe97jVNZ0UYvJUHmHgO1chAVwHhjua0Lz0Ir/2b2UppGxIbZdNp6/wE0I1p1U1B0bsomuV9kMAxwIDAQAB" )  ; ----- DKIM key mail for l1-9.ephec-ti.be
+
+_dmarc.l1-9.ephec-ti.be. IN TXT "v=DMARC1; p=quarantine; rua=mailto:tpuser@l1-9.ephec-ti.be; ruf=mailto:tpusertwo@l1-9.ephec-ti.be; sp=quarantine; aspf=s; adkim=s; rf=iodef; ri=86400"
+
+cdn.www.l1-9.ephec-ti.be. CNAME cl-glea58852f.gcdn.co.

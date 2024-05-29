@@ -1,0 +1,68 @@
+Return-Path: <boteurj@gmail.com>
+Delivered-To: tpuser@l1-9.ephec-ti.be
+Received: from mail.l1-9.ephec-ti.be
+	by mail.l1-9.ephec-ti.be with LMTP
+	id II5SNtdROmZNBAAAcsTLiQ
+	(envelope-from <boteurj@gmail.com>)
+	for <tpuser@l1-9.ephec-ti.be>; Tue, 07 May 2024 16:07:51 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.l1-9.ephec-ti.be (Postfix) with ESMTP id D1339430D5
+	for <tpuser@l1-9.ephec-ti.be>; Tue,  7 May 2024 16:07:51 +0000 (UTC)
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=209.85.208.173; helo=mail-lj1-f173.google.com; envelope-from=boteurj@gmail.com; receiver=<UNKNOWN> 
+Authentication-Results: mail.l1-9.ephec-ti.be; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: mail.l1-9.ephec-ti.be;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20230601 header.b=dWg7K5tX;
+	dkim-atps=neutral
+Received: from mail-lj1-f173.google.com (mail-lj1-f173.google.com [209.85.208.173])
+	by mail.l1-9.ephec-ti.be (Postfix) with ESMTPS id 1D5344305F
+	for <tpuser@l1-9.ephec-ti.be>; Tue,  7 May 2024 16:07:47 +0000 (UTC)
+Received: by mail-lj1-f173.google.com with SMTP id 38308e7fff4ca-2e0933d3b5fso42447151fa.2
+        for <tpuser@l1-9.ephec-ti.be>; Tue, 07 May 2024 09:07:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1715098061; x=1715702861; darn=l1-9.ephec-ti.be;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=3yC2h0ntWhKA+rKuSESlBsj0zesxTANo+tvSMhIVUQk=;
+        b=dWg7K5tXZSss9CgZjGOUYdeSd8bRNMcKKow8DKgAmV9a7stQO48c1uY3x5BpjEzCkC
+         I3t8zOz1tgGzuYrili3YPbH7qm4H6hWk+08sahbP9gdwLBubguZlZirNtEgUW6YKubeG
+         2MaOIyaCOYRqpInNNX0NpYc+41+77rRMCEtxBNNiiH6jjiyrZXAU3q2qCsh4ZLAKXy2+
+         4bYmRLqgOdc3qhk0JcMIJftpUeXQylF6gvo967BhR/oINorzs2rQlUPdLTe2lwzKugyM
+         zW/zGODHXqs6Q9eyZoN8VUC3tmRpxpEhLGiRsU+HHgwzJJCLD/y0Kwbj5KqemJm7Wy1u
+         bSDA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1715098061; x=1715702861;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=3yC2h0ntWhKA+rKuSESlBsj0zesxTANo+tvSMhIVUQk=;
+        b=h411Y0ZMlbj9pDbDNJBa3duA3zfTi2sJWs5Vr1xYuSzxoSQ9wqVhgg1iToQDcen2Xf
+         52reZZvQqBM6ROGZbpdg3+IEE694XBTBwzxio/l9Yh0WM9yI6wMA+2hl3hA45MZxENLr
+         Z32hncgkUNTfh3BJpYcrZvvptK4CaOHHkyw1nYXw/icgye40EwmO5fbG94or8ekmwRuD
+         OqFcOb4mPhT73lZyZDbvJ8IMapCDmn0slQCKBnqf+Js0xPXPtwuR5wElzFdmeekSas7Y
+         mTNSvMvbCfnMKAi2jvhOB2TrFzm6+0GHp5MGBYwgxqvvXr+Mn0kdLBSdFuzfT5H4nTdD
+         FSTQ==
+X-Gm-Message-State: AOJu0YwGjWeHxQ0WS/8XP1XLYCFx6NBobah2sdEJ9KRTgGOr75Gu9Uon
+	JR8k6DlEije+Ck1LvXLCnr1dwBb4xIz65us00ARd02NG/NNZUS1scnq2ZSA05JSWEqEHxzTGW0C
+	cqQSgANRn4qFzyaYjpnkS2XoQjSx5Ug==
+X-Google-Smtp-Source: AGHT+IEt1tPl5hyi0Zwms3OpUVTsGKsQDuLsEPrV2917Joj6ry5AXeRXpu3+oxv/q1nnpOymN+2Rt0jxlTu1tcezoMg=
+X-Received: by 2002:a2e:8547:0:b0:2d8:be29:4ca9 with SMTP id
+ 38308e7fff4ca-2e447699ad8mr285341fa.39.1715098061224; Tue, 07 May 2024
+ 09:07:41 -0700 (PDT)
+MIME-Version: 1.0
+From: Jean boteur <boteurj@gmail.com>
+Date: Tue, 7 May 2024 18:07:30 +0200
+Message-ID: <CABczR0CQ6nh_uaY-Y=3h2ME=uaLFoM91gsSibyBM_=xwx1koyQ@mail.gmail.com>
+Subject: test non spam
+To: tpuser@l1-9.ephec-ti.be
+Content-Type: multipart/alternative; boundary="000000000000b1c61f0617df62b0"
+
+--000000000000b1c61f0617df62b0
+Content-Type: text/plain; charset="UTF-8"
+
+coucou petit test pour voir si je suis devenu blacklist
+
+--000000000000b1c61f0617df62b0
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">coucou petit test pour voir si je suis devenu blacklist<div><br></div></div>
+
+--000000000000b1c61f0617df62b0--

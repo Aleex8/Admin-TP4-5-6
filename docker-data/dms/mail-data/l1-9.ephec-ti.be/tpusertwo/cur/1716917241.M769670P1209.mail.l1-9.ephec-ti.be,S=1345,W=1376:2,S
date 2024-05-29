@@ -1,0 +1,31 @@
+Return-Path: <tpuser@l1-9.ephec-ti.be>
+Delivered-To: tpusertwo@l1-9.ephec-ti.be
+Received: from mail.l1-9.ephec-ti.be
+	by mail.l1-9.ephec-ti.be with LMTP
+	id 4nHCLfkTVma5BAAAcsTLiQ
+	(envelope-from <tpuser@l1-9.ephec-ti.be>)
+	for <tpusertwo@l1-9.ephec-ti.be>; Tue, 28 May 2024 17:27:21 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.l1-9.ephec-ti.be (Postfix) with ESMTP id A3F6A43202
+	for <tpusertwo@l1-9.ephec-ti.be>; Tue, 28 May 2024 17:27:21 +0000 (UTC)
+Message-ID: <2ed55294-e41f-4404-a664-34123187a5fd@l1-9.ephec-ti.be>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=l1-9.ephec-ti.be;
+	s=mail; t=1716917240;
+	bh=g3zLYH4xKxcPrHOD18z9YfpQcnk/GaJedfustWU5uGs=; h=To:From:Subject;
+	b=JizDOlNB8nnTTC8mTGq+Mb6VqlE1DREwEJQzNBt6KkzrdJtjk2/K6+vVCbv1llBnU
+	 88fUTqXwVAFxw2FuNNr7PWzKgFzDbsOxSXvUQ9VZMqfS+aY4txJkXiuGOvDAl/8uqv
+	 UV/zS4CZe4iHO27hPtPHih72WLQ/lkEQi6QO7L5bFVu1So87ml+AiM61q9OB13Dwvh
+	 J7xxF3/8p61KUtTA0LqU06Bx8lsNV7+PhIZmE/IyqVdwG3LndQpG9MHsMtoKcNaTPY
+	 eutLLdZ9VpxWZ0J5Gqv7K/B9e+O2KDYW8jiGH3L6nPTEdxAQCgSouyT/AyA9H/3prb
+	 5o/j1235ipwkw==
+Date: Tue, 28 May 2024 19:27:19 +0200
+MIME-Version: 1.0
+Content-Language: fr
+To: tpusertwo@l1-9.ephec-ti.be
+From: Lucien Vervaeren <tpuser@l1-9.ephec-ti.be>
+Subject: domaine interne
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+test
+

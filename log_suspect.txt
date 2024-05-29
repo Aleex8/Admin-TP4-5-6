@@ -1,0 +1,65 @@
+mailserver  | May  7 16:11:08 mail postfix/anvil[1086]: statistics: max connection rate 1/60s for (smtpd:209.85.208.176) at May  7 16:06:07
+mailserver  | May  7 16:11:08 mail postfix/anvil[1086]: statistics: max connection count 1 for (smtpd:209.85.208.176) at May  7 16:06:07
+mailserver  | May  7 16:11:08 mail postfix/anvil[1086]: statistics: max cache size 1 at May  7 16:06:07
+mailserver  | May  7 16:11:10 mail postfix/smtpd-amavis/smtpd[1099]: timeout after END-OF-MESSAGE from localhost[127.0.0.1]
+mailserver  | May  7 16:11:10 mail postfix/smtpd-amavis/smtpd[1099]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 commands=4
+mailserver  | May  7 16:12:51 mail postfix/smtpd-amavis/smtpd[1289]: timeout after END-OF-MESSAGE from localhost[127.0.0.1]
+mailserver  | May  7 16:12:51 mail postfix/smtpd-amavis/smtpd[1289]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 commands=4
+web-1       | [www.l1-9.ephec-ti.be] 87.121.69.52 [07/May/2024:16:14:30 +0000]  400 "CONNECT google.com:443 HTTP/1.1" 157
+mailserver  | May  7 16:21:59 mail postfix/submission/smtpd[2765]: warning: hostname scanner-07.ch1.censys-scanner.com does not resolve to address 167.94.138.51: Name or service not known
+mailserver  | May  7 16:21:59 mail postfix/submission/smtpd[2765]: connect from unknown[167.94.138.51]
+mailserver  | May  7 16:22:01 mail postfix/submission/smtpd[2765]: Anonymous TLS connection established from unknown[167.94.138.51]: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits) key-exchange X25519 server-signature ECDSA (P-256) server-digest SHA256
+mailserver  | May  7 16:22:01 mail postfix/submission/smtpd[2765]: lost connection after STARTTLS from unknown[167.94.138.51]
+mailserver  | May  7 16:22:01 mail postfix/submission/smtpd[2765]: disconnect from unknown[167.94.138.51] ehlo=1 starttls=1 commands=2
+mailserver  | May  7 16:22:09 mail postfix/submission/smtpd[2765]: warning: hostname scanner-07.ch1.censys-scanner.com does not resolve to address 167.94.138.51: Name or service not known
+mailserver  | May  7 16:22:09 mail postfix/submission/smtpd[2765]: connect from unknown[167.94.138.51]
+mailserver  | May  7 16:22:09 mail postfix/submission/smtpd[2765]: bare <LF> received after CONNECT from unknown[167.94.138.51]
+mailserver  | May  7 16:22:09 mail postfix/submission/smtpd[2765]: disconnect from unknown[167.94.138.51] commands=0/0
+mailserver  | May  7 16:22:11 mail postfix/submission/smtpd[2765]: warning: hostname scanner-07.ch1.censys-scanner.com does not resolve to address 167.94.138.51: Name or service not known
+mailserver  | May  7 16:22:11 mail postfix/submission/smtpd[2765]: connect from unknown[167.94.138.51]
+mailserver  | May  7 16:22:11 mail postfix/submission/smtpd[2765]: bare <LF> received after CONNECT from unknown[167.94.138.51]
+mailserver  | May  7 16:22:11 mail postfix/submission/smtpd[2765]: disconnect from unknown[167.94.138.51] commands=0/0
+mailserver  | May  7 16:22:12 mail postfix/submission/smtpd[2765]: warning: hostname scanner-07.ch1.censys-scanner.com does not resolve to address 167.94.138.51: Name or service not known
+mailserver  | May  7 16:22:12 mail postfix/submission/smtpd[2765]: connect from unknown[167.94.138.51]
+mailserver  | May  7 16:22:13 mail postfix/submission/smtpd[2765]: bare <LF> received after CONNECT from unknown[167.94.138.51]
+mailserver  | May  7 16:22:13 mail postfix/submission/smtpd[2765]: disconnect from unknown[167.94.138.51] commands=0/0
+mailserver  | May  7 16:22:15 mail postfix/submission/smtpd[2765]: warning: hostname scanner-07.ch1.censys-scanner.com does not resolve to address 167.94.138.51: Name or service not known
+mailserver  | May  7 16:22:15 mail postfix/submission/smtpd[2765]: connect from unknown[167.94.138.51]
+mailserver  | May  7 16:22:15 mail postfix/submission/smtpd[2765]: bare <LF> received after CONNECT from unknown[167.94.138.51]
+mailserver  | May  7 16:22:15 mail postfix/submission/smtpd[2765]: disconnect from unknown[167.94.138.51] commands=0/0
+mailserver  | May  7 16:25:35 mail postfix/anvil[2767]: statistics: max connection rate 5/60s for (submission:167.94.138.51) at May  7 16:22:15
+mailserver  | May  7 16:25:35 mail postfix/anvil[2767]: statistics: max connection count 1 for (submission:167.94.138.51) at May  7 16:21:59
+mailserver  | May  7 16:25:35 mail postfix/anvil[2767]: statistics: max cache size 1 at May  7 16:21:59
+web-1       | [54.37.12.15] 92.10.146.1 [07/May/2024:16:26:43 +0000]  301 "GET / HTTP/1.1" 169
+web-1       | [ns.l1-9.ephec-ti.be] 205.210.31.140 [07/May/2024:16:38:33 +0000]  301 "GET / HTTP/1.1" 169
+web-1       | [ns.l1-9.ephec-ti.be] 205.210.31.140 [07/May/2024:16:38:34 +0000]  200 "GET / HTTP/1.1" 471
+web-1       | [54.37.12.15] 54.36.115.221 [07/May/2024:16:46:27 +0000]  301 "GET /.env HTTP/1.1" 169
+web-1       | [54.37.12.15] 54.36.115.221 [07/May/2024:16:46:27 +0000]  301 "POST / HTTP/1.1" 169
+web-1       | [54.37.12.15] 185.224.128.43 [07/May/2024:16:48:38 +0000]  301 "GET / HTTP/1.1" 169
+web-1       | [54.37.12.15] 179.43.188.106 [07/May/2024:16:50:06 +0000]  301 "GET / HTTP/1.1" 169
+mailserver  | May  7 16:52:40 mail postfix/submissions/smtpd[5961]: connect from unknown[167.94.146.61]
+mailserver  | May  7 16:52:40 mail postfix/submissions/smtpd[5961]: Anonymous TLS connection established from unknown[167.94.146.61]: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits) key-exchange X25519 server-signature ECDSA (P-256) server-digest SHA256
+mailserver  | May  7 16:52:40 mail postfix/submissions/smtpd[5961]: lost connection after EHLO from unknown[167.94.146.61]
+mailserver  | May  7 16:52:40 mail postfix/submissions/smtpd[5961]: disconnect from unknown[167.94.146.61] ehlo=1 commands=1
+mailserver  | May  7 16:52:42 mail postfix/submissions/smtpd[5961]: connect from unknown[167.94.146.61]
+mailserver  | May  7 16:52:42 mail postfix/submissions/smtpd[5961]: Anonymous TLS connection established from unknown[167.94.146.61]: TLSv1.2 with cipher ECDHE-ECDSA-AES128-GCM-SHA256 (128/128 bits)
+mailserver  | May  7 16:52:42 mail postfix/submissions/smtpd[5961]: lost connection after CONNECT from unknown[167.94.146.61]
+mailserver  | May  7 16:52:42 mail postfix/submissions/smtpd[5961]: disconnect from unknown[167.94.146.61] commands=0/0
+mailserver  | May  7 16:52:43 mail postfix/submissions/smtpd[5961]: connect from unknown[167.94.146.61]
+mailserver  | May  7 16:52:43 mail postfix/submissions/smtpd[5961]: SSL_accept error from unknown[167.94.146.61]: -1
+mailserver  | May  7 16:52:43 mail postfix/submissions/smtpd[5961]: warning: TLS library problem: error:14209102:SSL routines:tls_early_post_process_client_hello:unsupported protocol:../ssl/statem/statem_srvr.c:1685:
+mailserver  | May  7 16:52:43 mail postfix/submissions/smtpd[5961]: lost connection after CONNECT from unknown[167.94.146.61]
+mailserver  | May  7 16:52:43 mail postfix/submissions/smtpd[5961]: disconnect from unknown[167.94.146.61] commands=0/0
+mailserver  | May  7 16:52:44 mail postfix/submissions/smtpd[5961]: connect from unknown[167.94.146.61]
+mailserver  | May  7 16:52:44 mail postfix/submissions/smtpd[5961]: SSL_accept error from unknown[167.94.146.61]: -1
+mailserver  | May  7 16:52:44 mail postfix/submissions/smtpd[5961]: warning: TLS library problem: error:14209102:SSL routines:tls_early_post_process_client_hello:unsupported protocol:../ssl/statem/statem_srvr.c:1685:
+mailserver  | May  7 16:52:44 mail postfix/submissions/smtpd[5961]: lost connection after CONNECT from unknown[167.94.146.61]
+mailserver  | May  7 16:52:44 mail postfix/submissions/smtpd[5961]: disconnect from unknown[167.94.146.61] commands=0/0
+mailserver  | May  7 16:52:46 mail postfix/submissions/smtpd[5961]: connect from unknown[167.94.146.61]
+mailserver  | May  7 16:52:46 mail postfix/submissions/smtpd[5961]: SSL_accept error from unknown[167.94.146.61]: -1
+mailserver  | May  7 16:52:46 mail postfix/submissions/smtpd[5961]: warning: TLS library problem: error:1420918C:SSL routines:tls_early_post_process_client_hello:version too low:../ssl/statem/statem_srvr.c:1685:
+mailserver  | May  7 16:52:46 mail postfix/submissions/smtpd[5961]: lost connection after CONNECT from unknown[167.94.146.61]
+mailserver  | May  7 16:52:46 mail postfix/submissions/smtpd[5961]: disconnect from unknown[167.94.146.61] commands=0/0
+mailserver  | May  7 16:56:06 mail postfix/anvil[5964]: statistics: max connection rate 2/60s for (submissions:167.94.146.61) at May  7 16:52:42
+mailserver  | May  7 16:56:06 mail postfix/anvil[5964]: statistics: max connection count 1 for (submissions:167.94.146.61) at May  7 16:52:40
+mailserver  | May  7 16:56:06 mail postfix/anvil[5964]: statistics: max cache size 1 at May  7 16:52:40

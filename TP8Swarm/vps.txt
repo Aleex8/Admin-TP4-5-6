@@ -1,0 +1,3 @@
+vpslucien : hostname = lucman
+vpsbruno : hostname = vps-6039cad8
+

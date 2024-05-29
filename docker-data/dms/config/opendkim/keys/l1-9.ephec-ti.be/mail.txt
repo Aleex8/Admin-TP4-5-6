@@ -1,0 +1,3 @@
+mail._domainkey	IN	TXT	( "v=DKIM1; h=sha256; k=rsa; "
+	  "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtTjYo88gxGSpqvHBe6QyD0WqosriGtfRV857AaJbddWOESiw+2IK0/ixF7r8cx+um4D0jTPGiolWaVo9CGEqj9A+RoymFyb9NXUOMPpfeUxFkiiM+J8M3wd12V5/zL8GAYUlkfUJIfo1IpsVmjnO5Ewh6DSyMi4qH45PlDdaIJR71cNHq9xFm1DTLK+mi9AiNhcFgQj8d0wD8V"
+	  "gp1eRaWZQAql6mtmZ6Y1JzOrFMXT90uzEFTHyslMwb0XRxkbjrOAWgxwIUb6qe97jVNZ0UYvJUHmHgO1chAVwHhjua0Lz0Ir/2b2UppGxIbZdNp6/wE0I1p1U1B0bsomuV9kMAxwIDAQAB" )  ; ----- DKIM key mail for l1-9.ephec-ti.be

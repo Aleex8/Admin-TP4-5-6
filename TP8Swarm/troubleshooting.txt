@@ -1,0 +1,8 @@
+Problème lors de l'ajout d'un node : 
+les ports sur le node manager du cluster ne sont pas ouverts => ne permet pas l'entrée dans le cluster en tant que worker / manager
+
+problème lors de l'ajout d'un node manager : 
+les ports sur le node manager du cluster ne sont pas ouverts => ne permet pas l'entrée dans le cluster
+les ports sur le node rentrant ne sons pas ouverts => ne permet pas l'entrée dans le cluster en tant que manager
+
+=> Ajouter une règle permettant l'accès au port 2377 (pour plus de sécurité, préciser l'ouverture seulement aux adresses ip nécessaires)
