@@ -1,2 +1,0 @@
-mail._domainkey.example.com example.com:mail:/etc/opendkim/keys/example.com/mail.private
-mail._domainkey.l1-9.ephec-ti.be l1-9.ephec-ti.be:mail:/etc/opendkim/keys/l1-9.ephec-ti.be/mail.private
