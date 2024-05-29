@@ -1,0 +1,20 @@
+Message-ID: <2fd03edf-9bff-423b-bbbe-d43b06c72925@l1-9.ephec-ti.be>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=l1-9.ephec-ti.be;
+	s=mail; t=1716984928;
+	bh=WuB9AncAak43qnu9O7Bd6RJjVQ1OfI84QzqpfVlZ5fc=; h=To:From;
+	b=HvJx6fdFEtY6pcPc1Z8UdNqEoV/tR9UGoegQ+XwQcqrSuZj80OTVes62O+WHq+AH9
+	 VScS6pldQQhWx8UjAaWNNXEhg+xCba24qxaHAFgKKD8oRfgxcUSkfe8DuFOQ/YyQoq
+	 N7uV2C3qVm0qwfICCiuEkQyjHVzdy6iQm4df68JKC4HPYNCDEg/a/OX8WvsNln1zga
+	 truefydNK0jbOZIbf4nwaHx9PTnU21V01K0PpXEj/QHKXFE+cx+yarEQJ6457SfPgI
+	 vlIif7GiZVKLgp1hN+biFpEea3S/dNKcj4FRKpot0DLPWF4audSfoxR0l4y8em74US
+	 y84oqNrqu5wMA==
+Date: Wed, 29 May 2024 14:15:20 +0200
+MIME-Version: 1.0
+Content-Language: fr
+To: Alexandre Brugger <superalexbrugger@gmail.com>
+From: Alexandre Brugger <tpuser@l1-9.ephec-ti.be>
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Test envoi vers un Gmail
+

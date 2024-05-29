@@ -38,3 +38,27 @@ May 29 11:20:18 mail dovecot: imap-login: Disconnected: Connection closed (no au
 May 29 11:31:43 mail dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 5 secs): user=<>, rip=130.104.72.60, lip=172.25.0.2, TLS handshaking: Connection closed, session=<rT1JGJYZtRuCaEg8>
 May 29 11:31:43 mail dovecot: imap-login: Login: user=<tpuser@l1-9.ephec-ti.be>, method=PLAIN, rip=130.104.31.74, lip=172.25.0.2, mpid=17203, TLS, session=<9LJLGJYZZ++CaB9K>
 May 29 11:31:43 mail dovecot: imap-login: Login: user=<tpusertwo@l1-9.ephec-ti.be>, method=PLAIN, rip=130.104.31.74, lip=172.25.0.2, mpid=17204, TLS, session=<ULVLGJYZZu+CaB9K>
+May 29 12:15:23 mail postfix/submissions/smtpd[21745]: connect from wifi-student17-nat-outside-11.sri.ucl.ac.be[130.104.31.74]
+May 29 12:15:23 mail postfix/submissions/smtpd[21747]: connect from unknown[130.104.72.60]
+May 29 12:15:28 mail postfix/submissions/smtpd[21747]: SSL_accept error from unknown[130.104.72.60]: lost connection
+May 29 12:15:28 mail postfix/submissions/smtpd[21747]: lost connection after CONNECT from unknown[130.104.72.60]
+May 29 12:15:28 mail postfix/submissions/smtpd[21747]: disconnect from unknown[130.104.72.60] commands=0/0
+May 29 12:15:28 mail postfix/submissions/smtpd[21745]: Anonymous TLS connection established from wifi-student17-nat-outside-11.sri.ucl.ac.be[130.104.31.74]: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits) key-exchange X25519 server-signature ECDSA (P-256) server-digest SHA256
+May 29 12:15:28 mail postfix/submissions/smtpd[21745]: 8CA46431FC: client=wifi-student17-nat-outside-11.sri.ucl.ac.be[130.104.31.74], sasl_method=PLAIN, sasl_username=tpuser@l1-9.ephec-ti.be
+May 29 12:15:28 mail postfix/sender-cleanup/cleanup[21757]: 8CA46431FC: message-id=<2fd03edf-9bff-423b-bbbe-d43b06c72925@l1-9.ephec-ti.be>
+May 29 12:15:28 mail postfix/sender-cleanup/cleanup[21757]: 8CA46431FC: replace: header MIME-Version: 1.0 from wifi-student17-nat-outside-11.sri.ucl.ac.be[130.104.31.74]; from=<tpuser@l1-9.ephec-ti.be> to=<superalexbrugger@gmail.com> proto=ESMTP helo=<[192.168.193.10]>: MIME-Version: 1.0
+May 29 12:15:28 mail opendkim[647]: 8CA46431FC: DKIM-Signature field added (s=mail, d=l1-9.ephec-ti.be)
+May 29 12:15:28 mail postfix/qmgr[767]: 8CA46431FC: from=<tpuser@l1-9.ephec-ti.be>, size=405, nrcpt=1 (queue active)
+May 29 12:15:30 mail postfix/smtpd-amavis/smtpd[21765]: connect from localhost[127.0.0.1]
+May 29 12:15:30 mail postfix/smtpd-amavis/smtpd[21765]: 45B4E43206: client=localhost[127.0.0.1]
+May 29 12:15:30 mail postfix/cleanup[21766]: 45B4E43206: message-id=<2fd03edf-9bff-423b-bbbe-d43b06c72925@l1-9.ephec-ti.be>
+May 29 12:15:30 mail postfix/qmgr[767]: 45B4E43206: from=<tpuser@l1-9.ephec-ti.be>, size=1120, nrcpt=1 (queue active)
+May 29 12:15:30 mail amavis[21427]: (21427-01) Passed CLEAN {RelayedOpenRelay}, [130.104.31.74]:61556 [130.104.31.74] <tpuser@l1-9.ephec-ti.be> -> <superalexbrugger@gmail.com>, Queue-ID: 8CA46431FC, Message-ID: <2fd03edf-9bff-423b-bbbe-d43b06c72925@l1-9.ephec-ti.be>, mail_id: iE5VOWH3CAKa, Hits: 1.657, size: 900, queued_as: 45B4E43206, 1593 ms
+May 29 12:15:30 mail postfix/smtp-amavis/smtp[21761]: 8CA46431FC: to=<superalexbrugger@gmail.com>, relay=127.0.0.1[127.0.0.1]:10024, delay=1.8, delays=0.16/0.02/0.03/1.6, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 45B4E43206)
+May 29 12:15:30 mail postfix/qmgr[767]: 8CA46431FC: removed
+May 29 12:15:31 mail postfix/smtp[21767]: Trusted TLS connection established to gmail-smtp-in.l.google.com[142.251.9.26]:25: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits) key-exchange X25519 server-signature ECDSA (P-256) server-digest SHA256
+May 29 12:15:31 mail postfix/smtp[21767]: 45B4E43206: to=<superalexbrugger@gmail.com>, relay=gmail-smtp-in.l.google.com[142.251.9.26]:25, delay=1.3, delays=0.02/0.05/0.71/0.48, dsn=2.0.0, status=sent (250 2.0.0 OK  1716984931 a640c23a62f3a-a626cc363cbsi614720966b.400 - gsmtp)
+May 29 12:15:31 mail postfix/qmgr[767]: 45B4E43206: removed
+May 29 12:15:32 mail dovecot: imap-login: Login: user=<tpuser@l1-9.ephec-ti.be>, method=PLAIN, rip=130.104.31.74, lip=172.25.0.2, mpid=21771, TLS, session=<ryv3tJYZdvCCaB9K>
+May 29 12:15:33 mail postfix/submissions/smtpd[21745]: disconnect from wifi-student17-nat-outside-11.sri.ucl.ac.be[130.104.31.74] ehlo=1 auth=1 mail=1 rcpt=1 data=1 quit=1 commands=6
+May 29 12:15:33 mail dovecot: imap(tpuser@l1-9.ephec-ti.be)<21771><ryv3tJYZdvCCaB9K>: Disconnected: Logged out in=499 out=635 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
